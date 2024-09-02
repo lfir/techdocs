@@ -1,0 +1,22 @@
+#welcomerow {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.rightimg {
+  float: right;
+  max-width: 400px;
+}
+
+@media (min-width: 850px) {
+  .rightimg {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 580px) {
+  .rightimg {
+    display: none;
+  }
+}
