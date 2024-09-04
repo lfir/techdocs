@@ -10,11 +10,12 @@ updates:
     schedule:
       interval: "daily"
     groups:
-      minor-and-patch:
+      sec-minor-patch:
+        applies-to: security-updates
         update-types:
         - "patch"
         - "minor"
     ignore:
-      # Ignore all minor and patch updates.
+      # Ignore minor and patch version updates (not security updates)
       - dependency-name: "*"
         update-types: ["version-update:semver-minor", "version-update:semver-patch"]
