@@ -121,6 +121,12 @@ ip -c -h -s link show eth0
 Options `-c` and `-h` add color and human-readable values to output.
 :::
 
+## NetworkManager
+
+### Disable IPv6 (GUI)
+
+In the IPv6 tab of the connection's settings set **Method** to **Disabled**.
+
 ## Ping
 
 Used to test whether or not a packet can reach a host. Works by sending ICMP echo request (Type 8) packets 
