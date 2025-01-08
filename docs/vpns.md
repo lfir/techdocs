@@ -7,9 +7,10 @@ title: VPNs
 ### Common issues
 
 - Check path to certificate and key files in connection settings or import connection again with
-  all files being in the same folder and agree to copy certificate files to the dir networkmanager uses.
-- OpenVPN 2.6+ depreciates an option/key that is stored in the configuration file. Update
-  it replacing "cipher" with "data-ciphers".
+  all files being in the same folder and agree to copy certificate files to the dir NetworkManager uses
+  by default. Otherwise, i.e. on systems with SELinux, NetworkManager might be unable to read these files.
+- OpenVPN 2.6+ depreciates an option/key that might be stored in a configuration file crated with a
+  previous version. Update it replacing "cipher" with "data-ciphers".
 
 sed command to update all the configuration files in dir:
 

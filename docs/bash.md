@@ -62,7 +62,7 @@ cat * >> bigfile.txt
 ```
 
 :::tip
-Use `*.extension` instead of * to merge only files with the given extension.
+Use `*.extension` instead of `*` to merge only files with the given extension.
 :::
 
 ## Return to previous position in history after searching with Ctrl+r
@@ -135,6 +135,21 @@ Add line to `~/.bash_profile` or `~/.bashrc`.
 :::note
 These statements are executed after user log in.
 :::
+
+## Show pipe operation status with pv
+
+The basic usage is similar to the **cat** command.
+For instance to show progress while creating a tarball:
+
+```bash
+tar cf - /target | pv > target.tar
+```
+
+And when extracting files from one:
+
+```bash
+pv target.tar | tar xf -
+```
 
 ## Use parts of last command in current one
 
