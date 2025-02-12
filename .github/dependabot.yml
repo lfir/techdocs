@@ -9,13 +9,9 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    groups:
-      sec-minor-patch:
-        applies-to: security-updates
-        update-types:
-        - "patch"
-        - "minor"
+    target-branch: "devel"
     ignore:
       # Ignore minor and patch version updates (not security updates)
       - dependency-name: "*"
-        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+        update-types:
+          ["version-update:semver-minor", "version-update:semver-patch"]

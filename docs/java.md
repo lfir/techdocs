@@ -8,6 +8,12 @@ title: Java
 /usr/lib/jvm
 ```
 
+## Ivy
+
+### Duplicate dependencies
+
+When a jar file is added to the classpath more than once (i.e. because it is a sub-dependency of multiple libraries that use different versions of it) the **first** one declared in **ivy.xml** takes precedence.
+
 ## Mockito
 
 :::tip
