@@ -9,6 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    target-branch: "devel"
     ignore:
       # Ignore minor and patch version updates (not security updates)
       - dependency-name: "*"
