@@ -176,6 +176,74 @@ $ echo !:0
 rm
 ```
 
+## Useful Environment Variables
+
+```
+DISPLAY
+```
+
+Display identifier from the display server (e.g. `x11`).
+
+```
+EDITOR
+```
+
+Text editor used by different applications (e.g. `crontab`, `visudo`).
+
+```
+HOME
+```
+
+Current user's home directory.
+
+```
+HOSTNAME
+```
+
+System's name.
+
+```
+PATH
+```
+
+List of dirs where executables are looked for by the shell.
+
+```
+PWD
+```
+
+Current working directory.
+
+```
+OLDPWD
+```
+
+Previous working directory.
+
+```
+SHELL
+```
+
+Path to the current user's shell.
+
+```
+UID
+```
+
+Current user's numeric ID.
+
+```
+USER
+```
+
+Name of the current user.
+
+```
+XDG_SESSION_TYPE
+```
+
+Graphical session type (i.e. `wayland`, `x11`)
+
 ## Watch log file in reverse order and paginated
 
 ```bash
