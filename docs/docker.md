@@ -97,6 +97,10 @@ sudo docker images
 sudo docker ps
 ```
 
+:::tip
+Append option `--all` to also see the stopped ones in the output.
+:::
+
 ### Kill running container
 
 ```
@@ -108,6 +112,7 @@ sudo docker kill containerId
 ```
 sudo groupadd docker
 ```
+
 ```
 sudo usermod -aG docker $USER
 ```
@@ -161,9 +166,10 @@ sudo docker-compose exec -it serviceName bash
 ```
 
 :::note
+
 - `serviceName` has to match the one in `docker-compose.yml`.
 - Other programs that require an interactive shell can be executed using the same syntax.
-:::
+  :::
 
 ### Start services in detached mode (bg process)
 
@@ -182,6 +188,7 @@ sudo docker-compose logs
 ```
 sudo docker-compose up --no-start
 ```
+
 ```
 sudo docker-compose start serviceName
 ```
