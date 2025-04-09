@@ -2,6 +2,16 @@
 title: Bash
 ---
 
+## File type codes in the output of ls
+
+- `-`: Regular file
+- `d`: Directory
+- `l`: Link
+- `c`: Character device
+- `s`: Socket
+- `p`: Named Pipe
+- `b`: Block Device
+
 ## Functions
 
 ### Access arguments from within a function

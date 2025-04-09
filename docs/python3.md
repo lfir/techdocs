@@ -9,9 +9,10 @@ hasattr(object, var_or_method_name)
 ```
 
 :::note
+
 - Arguments are an object and a string.
 - Recommended way compatible with duck typing.
-:::
+  :::
 
 ## Conda
 
@@ -66,6 +67,7 @@ conda clean --all
 ```
 conda update conda
 ```
+
 ```
 conda update anaconda
 ```
@@ -74,20 +76,6 @@ conda update anaconda
 
 ```python
 if __name__ == '__main__':
-```
-
-## Flask
-
-### Set app file (shell command)
-
-```
-export FLASK_APP=fileName.py
-```
-
-### Start development webserver
-
-```
-flask run
 ```
 
 ## Looping methods
@@ -299,9 +287,10 @@ python -m http.server
 ```
 
 :::note
+
 - Useful for sharing files over the network if encryption is not needed. Run command from the directory containing target files.
 - Incoming traffic on port `8000` needs to be allowed in the firewall.
-:::
+  :::
 
 ## Slice notation
 
@@ -321,18 +310,6 @@ sequence[1:]
 
 # Tail of the sequence (starting after last or nth elem).
 sequence[:-1]
-```
-
-## SQLAlchemy
-
-### Connect to database using independent sessions
-
-```python
-from sqlalchemy import create_engine
-from sqlalchemy.orm import scoped_session, sessionmaker
-
-engine = create_engine("DATABASE_URL")
-db = scoped_session(sessionmaker(bind=engine))
 ```
 
 ## String formatting
@@ -369,12 +346,15 @@ Requires PyPI package **pytest**.
 ```
 python -m venv my_virtenv
 ```
+
 ```
 source my_virtenv/bin/activate
 ```
+
 ```
 pip install pytest-cov
 ```
+
 ```
 pytest --cov-report term-missing --cov=srcdir/ testsdir/
 ```
