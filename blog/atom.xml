@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maybelambda.cf/techdocs/blog</id>
     <title>Sci &amp; Tech docs Blog</title>
-    <updated>2024-03-05T00:00:00.000Z</updated>
+    <updated>2025-04-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maybelambda.cf/techdocs/blog"/>
     <subtitle>Sci &amp; Tech docs Blog</subtitle>
     <icon>https://maybelambda.cf/techdocs/img/library1.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Fedora 42 released]]></title>
+        <id>https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released</id>
+        <link href="https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released"/>
+        <updated>2025-04-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fedora 42 was released last Tuesday and]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://fedoramagazine.org/announcing-fedora-linux-42" target="_blank" rel="noopener noreferrer">Fedora 42</a> was released last Tuesday and
+it's another great offering that continues the path of stability and usability combined with the
+latest versions of packages that has characterized Fedora lately.</p>
+<p>Personally, I've been using the Workstation edition with KDE happily for many years now and always update
+yearly two releases forward, when the one I'm currently on is close to EOL. I've not faced any issues
+in more than 10 major versions, and going from 40 to 42 was no exception. These are some tips that I
+think are important to maintain such level of continuity and stability:</p>
+<ul>
+<li>Don't use programs from third-party repositories, except for <a href="https://rpmfusion.org/" target="_blank" rel="noopener noreferrer">RPMFusion</a>.
+They might introduce conflicts with other packages or not provide versions for new Fedora
+releases on time. With so many apps nowadays on RPMFusion and Flatpak this is very easy to avoid.</li>
+<li>Keep <strong>/</strong> and <strong>/home</strong> in separate partitions. This way even if something goes wrong with the
+release upgrade you can reinstall from scratch without any damage to most of your configuration
+and personal files.</li>
+</ul>
+<p>Congratulations to Red Hat and the Fedora team and community!</p>]]></content>
+        <author>
+            <name>Asta86</name>
+            <uri>https://maybelambda.cf</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Docusaurus v3]]></title>
         <id>https://maybelambda.cf/techdocs/blog/2024/03/05/docusaurusv3-update</id>
