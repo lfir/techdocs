@@ -41,9 +41,10 @@ A class can be attribute of any tag.
 ```
 
 :::note
+
 - Has to be unique.
 - Can be attribute of any tag.
-:::
+  :::
 
 ### HTML5 version identifier
 
@@ -81,7 +82,7 @@ export default API;
 ```
 
 :::note
-Package name: **axios**.
+Package name: [axios](https://www.npmjs.com/package/axios).
 :::
 
 ### Install ESLint and airbnb rules
@@ -89,24 +90,29 @@ Package name: **axios**.
 ```
 cd projectDir
 ```
+
 ```
 npm install --save-dev babel-eslint
 ```
+
 ```bash
 npx install-peerdeps --dev eslint-config-airbnb # for react projects
 ```
+
 ```bash
 npx install-peerdeps --dev eslint-config-airbnb-base # for projects that don't use react
 ```
 
 :::note
+
 - npm 5+ required.
 - Packages are installed for the current project and saved as
   devDependencies in package.json.
-:::
-:::info
-[Reference](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
-:::
+  :::
+
+  :::info
+  [Reference](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
+  :::
 
 Create file **.eslintrc** with the following content.
 
