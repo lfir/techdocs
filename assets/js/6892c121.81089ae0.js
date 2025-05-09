@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktechdocs=self.webpackChunktechdocs||[]).push([[1475],{2406:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/techdocs/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":11,"previousPage":"/techdocs/blog","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
