@@ -31,6 +31,7 @@ Use one of the following commands.
 ```
 hostnamectl status
 ```
+
 ```
 cat /etc/hostname
 ```
@@ -74,6 +75,7 @@ sudo ip address add 192.168.1.1/24 dev eth0
 ```
 sudo ip link set eth0 up
 ```
+
 ```
 sudo ip link set eth0 down
 ```
@@ -83,6 +85,7 @@ sudo ip link set eth0 down
 ```
 sudo ip route delete 192.168.2.1/23 via 10.11.12.3
 ```
+
 ```bash
 sudo ip route delete 192.168.2.1/23 # for all routes to target
 ```
@@ -129,7 +132,7 @@ In the IPv6 tab of the connection's settings set **Method** to **Disabled**.
 
 ## Ping
 
-Used to test whether or not a packet can reach a host. Works by sending ICMP echo request (Type 8) packets 
+Used to test whether or not a packet can reach a host. Works by sending ICMP echo request (Type 8) packets
 to the destination host and waits for an ICMP echo reply (Type 0).
 
 The `icmp_seq` field shows the sequence number of packets sent. If sequence numbers are missing, some
@@ -149,6 +152,7 @@ the connection is probably very slow as packets are exceeding the one second def
 ```
 sudo route add -net 192.168.0.0 netmask 255.255.255.0 gw 192.168.0.1
 ```
+
 ```bash
 # Add default gateway.
 sudo route add default gw 192.168.0.1
@@ -159,6 +163,7 @@ sudo route add default gw 192.168.0.1
 ```
 sudo route del -net 192.168.0.0 netmask 255.255.255.0
 ```
+
 ```bash
 # Delete default gateway.
 sudo route del default
@@ -204,7 +209,7 @@ route
     </tr>
     <tr>
         <td>-o</td>
-		<td>Options (i. e. state established).</td>
+		<td>Options (i.e. state established).</td>
     </tr>
     <tr>
         <td>-p</td>
