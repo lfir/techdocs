@@ -8,6 +8,65 @@ title: Java
 /usr/lib/jvm
 ```
 
+## Common Maven terminal commands
+
+### Clean _target_ dir and build project
+
+```
+./mvnw clean install
+```
+
+:::tip
+Option `-DskipTests` can be used to ignore the tests
+:::
+
+### Generate artifacts
+
+```
+./mvnw package
+```
+
+### Run the test cases
+
+```
+./mvnw test
+```
+
+:::tip
+To run only specific tests use option `-Dtest=TestClassName`
+:::
+
+### Show dependency tree
+
+```
+./mvnw dependency:tree
+```
+
+### Download sources
+
+```
+./mvnw dependency:sources
+```
+
+### List available updates
+
+```
+./mvnw versions:display-dependency-updates
+```
+
+:::warning
+If more than one version of Java is installed on the host a suitable one might need to be specified instead of the default before running the commands above, i.e.
+
+```
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+./mvnw...
+```
+
+:::
+:::note
+If Maven is installed system-wide the [`mvn`](https://manpages.ubuntu.com/manpages/noble/mvn.1.html) command can be used instead of the Maven Wrapper (`mvnw`)
+:::
+
 ## Ivy
 
 ### Duplicate dependencies
