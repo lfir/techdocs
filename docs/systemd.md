@@ -8,6 +8,10 @@ title: Systemd
 systemctl list-units --state=failed
 ```
 
+:::note
+Without passing any options the command shows all installed unit files and their status.
+:::
+
 ## Journalctl
 
 `journalctl` can be used to browse all systemd journal logs.
