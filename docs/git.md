@@ -68,15 +68,17 @@ Switch to target branch and apply changes.
 ```
 git checkout branch
 ```
+
 ```
 git cherry-pick commitID
 ```
 
 :::note
+
 - `id1..idN` merges several commits, from `id1` to `idN`.
 - If the name of a branch is passed instead of a commit id the last commit of that branch is selected.
 - `-x` adds source commit id to commit message.
-:::
+  :::
 
 ## Create release tag
 
@@ -85,10 +87,12 @@ git cherry-pick commitID
 # Lightweight tag.
 git tag tagName
 ```
+
 ```bash
 # Annotated tag.
 git tag -a tagName -m 'tagMessage'
 ```
+
 ```bash
 # Transfer tag to remote server.
 git push -u origin tagName
@@ -105,6 +109,24 @@ be created based on it in the "Releases" section of the repository.
 git pull
 ```
 
+### Using rebase (i.e. no merging)
+
+```
+git pull --rebase
+```
+
+If conflicts occur the operation can be undone using
+
+```
+git rebase --abort
+```
+
+Or it can be fixed and then
+
+```
+git rebase --continue
+```
+
 ## Download upstream without merging changes
 
 ```
@@ -112,7 +134,7 @@ git fetch
 ```
 
 :::note
-Branches are now accessible locally and can be merged into the currrent branch.
+Branches are now accessible locally and can be merged into the current branch.
 :::
 
 ## Hooks
@@ -137,12 +159,15 @@ git log
 ```
 git rm fileName
 ```
+
 ```
 git commit -m "remove file"
 ```
+
 ```
 echo "fileName" >> .gitignore
 ```
+
 ```
 git commit -m "stop tracking file"
 ```
@@ -177,28 +202,34 @@ Manually replace files (preserves history).
 
 ```bash
 # Reset the local state.
-git reset --hard 
+git reset --hard
 ```
+
 ```bash
 # Copy the relevant part, e.g. the src directory.
 cp -r src/ /tmp/
 ```
+
 ```bash
 # Get the latest state again.
 git pull
 ```
+
 ```bash
 # Remove what is not needed anymore.
 rm -rf src/
 ```
+
 ```bash
 # Restore from the copy.
 cp -r /tmp/src .
 ```
+
 ```bash
 # Commit and push.
 git commit -am 'Revert to commitID'
 ```
+
 ```
 git push
 ```
@@ -214,6 +245,7 @@ git checkout -- file
 ```bash
 git revert --no-commit 0766c053..HEAD # HEAD = latest commit in current branch
 ```
+
 ```
 git commit
 ```
