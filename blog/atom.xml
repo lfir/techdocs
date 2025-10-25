@@ -13,7 +13,7 @@
         <link href="https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released"/>
         <updated>2025-04-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Fedora 42 was released last Tuesday and]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://fedoramagazine.org/announcing-fedora-linux-42" target="_blank" rel="noopener noreferrer">Fedora 42</a> was released last Tuesday and
+        <content type="html"><![CDATA[<p><a href="https://fedoramagazine.org/announcing-fedora-linux-42" target="_blank" rel="noopener noreferrer" class="">Fedora 42</a> was released last Tuesday and
 it's another great offering that continues the path of stability and usability combined with the
 latest versions of packages that has characterized Fedora lately.</p>
 <p>Personally, I've been using the Workstation edition with KDE happily for many years now and always update
@@ -21,10 +21,10 @@ yearly two releases forward, when the one I'm currently on is close to EOL. I've
 in more than 10 major versions, and going from 40 to 42 was no exception. These are some tips that I
 think are important to maintain such level of continuity and stability:</p>
 <ul>
-<li>Don't use programs from third-party repositories, except for <a href="https://rpmfusion.org/" target="_blank" rel="noopener noreferrer">RPMFusion</a>.
+<li class="">Don't use programs from third-party repositories, except for <a href="https://rpmfusion.org/" target="_blank" rel="noopener noreferrer" class="">RPMFusion</a>.
 They might introduce conflicts with other packages or not provide versions for new Fedora
 releases on time. With so many apps nowadays on RPMFusion and Flatpak this is very easy to avoid.</li>
-<li>Keep <strong>/</strong> and <strong>/home</strong> in separate partitions. This way even if something goes wrong with the
+<li class="">Keep <strong>/</strong> and <strong>/home</strong> in separate partitions. This way even if something goes wrong with the
 release upgrade you can reinstall from scratch without any damage to most of your configuration
 and personal files.</li>
 </ul>
@@ -40,7 +40,7 @@ and personal files.</li>
         <link href="https://maybelambda.cf/techdocs/blog/2024/03/05/docusaurusv3-update"/>
         <updated>2024-03-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Docusaurus was updated to the new major version 3.]]></summary>
-        <content type="html"><![CDATA[<p>Docusaurus was updated to the new major <a href="https://docusaurus.io/blog/releases/3.0" target="_blank" rel="noopener noreferrer">version 3</a>.</p>
+        <content type="html"><![CDATA[<p>Docusaurus was updated to the new major <a href="https://docusaurus.io/blog/releases/3.0" target="_blank" rel="noopener noreferrer" class="">version 3</a>.</p>
 <p>This time luckily only minor document formatting changes were needed to make them fully compatible with the new version of MDX that it uses.</p>]]></content>
         <author>
             <name>Asta86</name>
@@ -67,10 +67,10 @@ and personal files.</li>
         <link href="https://maybelambda.cf/techdocs/blog/2023/11/07/q4wine-eggroll"/>
         <updated>2023-11-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Lately Q4Wine has been my favorite Wine GUI since it's very]]></summary>
-        <content type="html"><![CDATA[<p>Lately <a href="https://github.com/brezerk/q4wine" target="_blank" rel="noopener noreferrer">Q4Wine</a> has been my favorite Wine GUI since it's very
+        <content type="html"><![CDATA[<p>Lately <a href="https://github.com/brezerk/q4wine" target="_blank" rel="noopener noreferrer" class="">Q4Wine</a> has been my favorite Wine GUI since it's very
 flexible and allows setting up and managing prefixes with specific configurations.
-Also <a href="https://github.com/GloriousEggroll/wine-ge-custom" target="_blank" rel="noopener noreferrer">wine-ge-custom</a> is a custom build of Wine
-based on <a href="https://github.com/ValveSoftware/Proton" target="_blank" rel="noopener noreferrer">Proton</a> meant to be used with
+Also <a href="https://github.com/GloriousEggroll/wine-ge-custom" target="_blank" rel="noopener noreferrer" class="">wine-ge-custom</a> is a custom build of Wine
+based on <a href="https://github.com/ValveSoftware/Proton" target="_blank" rel="noopener noreferrer" class="">Proton</a> meant to be used with
 non-Steam games outside of Steam.</p>
 <p>To make a prefix use a certain Wine build first it needs to be added under
 Tools -&gt; Wine Version Manager
@@ -92,7 +92,7 @@ A few days later <strong>Sci &amp; Tech docs</strong> was updated to start using
 <p>The update process from the beta 17 was pretty simple although some configuration options
 were moved to a different file and some CSS styles seemed to work differently on certain
 components, which required some additional small tweaks.</p>
-<p><a href="https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0" target="_blank" rel="noopener noreferrer">Official announcement</a>.</p>]]></content>
+<p><a href="https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0" target="_blank" rel="noopener noreferrer" class="">Official announcement</a>.</p>]]></content>
         <author>
             <name>Asta86</name>
             <uri>https://maybelambda.cf</uri>
@@ -123,9 +123,9 @@ components, which required some additional small tweaks.</p>
 <p>Hopefully it'll also make it easier to maintain in the long term and more secure since it uses newer libraries.</p>
 <p>Stuff that still needs to be migrated and won't be available for a while:</p>
 <ul>
-<li>Most docs.</li>
-<li>Offline version.</li>
-<li>Disqus comments.</li>
+<li class="">Most docs.</li>
+<li class="">Offline version.</li>
+<li class="">Disqus comments.</li>
 </ul>]]></content>
         <author>
             <name>Asta86</name>
@@ -153,7 +153,7 @@ the pages of the Blog posts.</p>]]></content>
         <updated>2020-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Updated Docusaurus to version 1.14.4.]]></summary>
         <content type="html"><![CDATA[<p>Updated Docusaurus to version <strong>1.14.4</strong>.</p>
-<p><a href="https://github.com/facebook/docusaurus/releases/tag/v1.14.4" target="_blank" rel="noopener noreferrer">Release notes</a>.</p>]]></content>
+<p><a href="https://github.com/facebook/docusaurus/releases/tag/v1.14.4" target="_blank" rel="noopener noreferrer" class="">Release notes</a>.</p>]]></content>
         <author>
             <name>Asta86</name>
             <uri>https://maybelambda.cf</uri>
@@ -176,11 +176,11 @@ registry edits, and troubleshooting compatibility issues. The process can be dau
 application runs under Wine and any tweaks that were needed to make it work. Contributing to the AppDB not only
 helps other users but also serves as a personal record for future reference. For example, my submissions include:</p>
 <ul>
-<li><a href="https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10687&amp;iTestingId=89827" target="_blank" rel="noopener noreferrer">Pirates of the burning sea</a> - A naval
+<li class=""><a href="https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10687&amp;iTestingId=89827" target="_blank" rel="noopener noreferrer" class="">Pirates of the burning sea</a> - A naval
 MMORPG that ran smoothly with the addition of a few dependencies.</li>
-<li><a href="https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30894&amp;iTestingId=86031" target="_blank" rel="noopener noreferrer">Final Fantasy VIII</a> - PC port
+<li class=""><a href="https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30894&amp;iTestingId=86031" target="_blank" rel="noopener noreferrer" class="">Final Fantasy VIII</a> - PC port
 of the classic PS1 JRPG which also ran well with really simple adjustments.</li>
-<li><a href="https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=34336&amp;iTestingId=100963" target="_blank" rel="noopener noreferrer">UOSteam</a> - Mapping tool
+<li class=""><a href="https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=34336&amp;iTestingId=100963" target="_blank" rel="noopener noreferrer" class="">UOSteam</a> - Mapping tool
 for the game Ultima Online. Only needed one small additional library to execute without issues.</li>
 </ul>
 <p>By sharing these setups, I think I might’ve helped others manage to replicate successful configurations while
@@ -198,7 +198,7 @@ This can be especially useful since official support in my experience is usually
         <updated>2019-06-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Search service providad by]]></summary>
         <content type="html"><![CDATA[<p>Search service providad by
-<a href="https://github.com/algolia" target="_blank" rel="noopener noreferrer">Algolia</a>
+<a href="https://github.com/algolia" target="_blank" rel="noopener noreferrer" class="">Algolia</a>
 is now available. Thanks to them for allowing me to install it on my documentation site.</p>
 <p>It can be used while browing the website connected to the internet.</p>]]></content>
         <author>
@@ -214,7 +214,7 @@ is now available. Thanks to them for allowing me to install it on my documentati
         <summary type="html"><![CDATA[First working version of my personal documentation site built with Docusaurus.]]></summary>
         <content type="html"><![CDATA[<p>First working version of my personal documentation site built with Docusaurus.</p>
 <p>The previous version created using Sphinx can still be accessed
-<a href="https://lfir.gitlab.io/sci-docs" target="_blank" rel="noopener noreferrer">here</a>
+<a href="https://lfir.gitlab.io/sci-docs" target="_blank" rel="noopener noreferrer" class="">here</a>
 although it is not being updated anymore.</p>]]></content>
         <author>
             <name>Asta86</name>
