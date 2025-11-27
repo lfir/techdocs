@@ -28,6 +28,16 @@ ffmpeg -f concat -i list.txt -c copy output.mkv
 ffmpeg -i original-file.avi new-file.mp4
 ```
 
+## Crop video
+
+```
+ffmpeg -i demo.mp4 -vf "crop=1100:768:0:0" out.mp4
+```
+
+- 1100 = width
+- 768 = height
+- 0:0 = initial coordinates (from the top-left corner)
+
 ## Trim audio or video file
 
 ```
