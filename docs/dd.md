@@ -26,9 +26,18 @@ it appropriate format and permissions.
 ```
 sudo dd if=/dev/zero of=swapfile bs=1024 count=1048576
 ```
+
+:::note
+
+- `bs` = block size, number of **bytes** by default; unit indicators **K**, **M** and **G** can be used, i.e. 1024 = 1K
+- `count` = number of times a block will be copied, i.e. if `bs` = 1024 and `count` = 2 then output file size = **2K**
+
+:::
+
 ```
 sudo chmod 600 swapfile
 ```
+
 ```
 sudo mkswap swapfile
 ```
