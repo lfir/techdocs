@@ -131,7 +131,7 @@ the pages of the Blog posts.</p>]]></content:encoded>
             <pubDate>Fri, 27 Dec 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[For Linux users, gaming has historically been a challenge due to the dominance of Windows-exclusive titles.]]></description>
             <content:encoded><![CDATA[<p>For Linux users, gaming has historically been a challenge due to the dominance of Windows-exclusive titles.
-Enter Wine, an open-source compatibility layer that allows Windows applications, including games, to run on Linux.</p>
+But then enter Wine, an open-source compatibility layer that allows Windows applications, including games, to run on Linux.</p>
 <p>With Wine lots of titles became playable, while it evolved from a complicated, bare-bones tool to a diverse ecosystem supported by front-ends and helper apps.
 For instance Winetricks, a script that simplifies the installation of some Windows runtimes and libraries, like DirectX or Visual C++, which many games require.
 Others like Lutris and PlayOnLinux allow creating and managing isolated Wine environments tailored to specific programs, through a graphical interface.</p>
