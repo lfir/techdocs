@@ -4,7 +4,7 @@ authors: lea
 ---
 
 For Linux users, gaming has historically been a challenge due to the dominance of Windows-exclusive titles.
-Enter Wine, an open-source compatibility layer that allows Windows applications, including games, to run on Linux.
+But then enter Wine, an open-source compatibility layer that allows Windows applications, including games, to run on Linux.
 
 <!--truncate-->
 

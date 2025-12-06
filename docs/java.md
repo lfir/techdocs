@@ -75,9 +75,9 @@ When a jar file is added to the classpath more than once (i.e. because it is a s
 
 ## Mockito
 
-:::tip
-When using `@InjectMocks` objects mocked with `@Mock` need to have EXACTLY the same type in both the original and tests classes (not a subclass/superclass).
-:::
+- Full mocks (created with `Mockito.mock()`) don't execute target code during stubbing, so matchers never become actual arguments. Spies (`Mockito.spy()`) do execute real code, so matchers must be handled with `doXxx().when()` syntax instead of `when().thenSomething()` directly.
+
+- When using `@InjectMocks` objects mocked with `@Mock` need to have EXACTLY the same type in both the original and tests classes (not a subclass/superclass).
 
 ## Run program in the terminal without manually compiling it first
 

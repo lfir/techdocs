@@ -24,7 +24,7 @@ title: Bash
 ### Define function
 
 ```bash
-function hello () {
+hello() {
     echo "Hello world"
 }
 ```

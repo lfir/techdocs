@@ -38,6 +38,38 @@ sudo localectl set-keymap layoutCode
 sudo localectl set-x11-keymap layoutCode # For the graphical environment
 ```
 
+## Cleanup home directory
+
+Directory listing sorted by size ascending.
+
+```bash
+du -Sh | sort -h
+```
+
+:::tip
+Option `-r` can be used with the `sort` command for results in descending order.
+:::
+
+Find files not accessed in a certain time. Replace **X** with the number of **days**.
+
+```bash
+find "$HOME" -atime +X -type f
+```
+
+:::tip
+Found files can be deleted by appending option `-delete`.
+:::
+
+:::note
+Access time must be supported by the file system and enabled (`noatime` option not present in `/etc/fstab`).
+:::
+
+Find large files. Replace **1G** with minimum target size.
+
+```bash
+find "$HOME" -type f -size +1G -exec du -hs {} \; | sort -h
+```
+
 ## Delete older kernels & limit max allowed
 
 Install `yum-utils`.
@@ -117,15 +149,16 @@ sudo dnf groupinstall groupName
 ```
 
 :::tip
+
 - Option `--with-optional` includes optional packages of the group too.
 - Option `-x pkgName` excludes pkgName.
-:::
+  :::
 
 ## Release upgrade using dnf
 
 :::warning
 Check that no repos exist with hardcoded release version in
-  `/etc/yum.repos.d/`
+`/etc/yum.repos.d/`
 :::
 
 Update current packages and install system upgrade plugin.
@@ -199,11 +232,12 @@ localhost:5901 # or 5900
 ```
 
 :::note
+
 - To disconnect log out from the desktop environment (vnc server is
   stopped automatically thanks to `-autokill` option) and
   `Crtl+C` the SSH tunnel.
 - Tested on RHEL 7.
-:::
+  :::
 
 ## RH Satellite
 
