@@ -56,6 +56,10 @@ Find files not accessed in a certain time. Replace **X** with the number of **da
 find "$HOME" -atime +X -type f
 ```
 
+:::note
+Access time must be supported by the file system and enabled (`noatime` option not present in `/etc/fstab`).
+:::
+
 Empty directories.
 
 ```bash
@@ -64,10 +68,6 @@ find "$HOME" -type d -empty
 
 :::tip
 Found files / dirs can be deleted by appending option `-delete`.
-:::
-
-:::note
-Access time must be supported by the file system and enabled (`noatime` option not present in `/etc/fstab`).
 :::
 
 Find large files. Replace **1G** with minimum target size.
