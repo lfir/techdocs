@@ -56,8 +56,14 @@ Find files not accessed in a certain time. Replace **X** with the number of **da
 find "$HOME" -atime +X -type f
 ```
 
+Empty directories.
+
+```bash
+find "$HOME" -type d -empty
+```
+
 :::tip
-Found files can be deleted by appending option `-delete`.
+Found files / dirs can be deleted by appending option `-delete`.
 :::
 
 :::note
