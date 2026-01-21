@@ -10,12 +10,12 @@ title: VPNs
   all files being in the same folder and agree to copy certificate files to the dir NetworkManager uses
   by default. Otherwise, i.e. on systems with SELinux, NetworkManager might be unable to read these files.
 - OpenVPN 2.6+ depreciates an option/key that might be stored in a configuration file crated with a
-  previous version. Update it replacing "cipher" with "data-ciphers".
+  previous version. Update it replacing `cipher` with `data-ciphers`.
 
-sed command to update all the configuration files in dir:
+`sed` command to update all the configuration files in current dir
 
-```
-sed -i 's/cipher AES-256-CBC/data-ciphers AES-256-CBC/' \*.ovpn
+```bash
+sed -i 's/cipher/data-ciphers/' \*.ovpn
 ```
 
 ## ProtonVPN
