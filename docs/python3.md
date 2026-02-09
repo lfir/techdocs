@@ -11,8 +11,9 @@ hasattr(object, var_or_method_name)
 :::note
 
 - Arguments are an object and a string.
-- Recommended way compatible with duck typing.
-  :::
+- Recommended way compatible with [duck-typing](https://docs.python.org/3/glossary.html#term-duck-typing).
+
+:::
 
 ## Conda
 
