@@ -2,11 +2,61 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maybelambda.cf/techdocs/blog</id>
     <title>Sci &amp; Tech docs Blog</title>
-    <updated>2025-04-18T00:00:00.000Z</updated>
+    <updated>2026-02-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maybelambda.cf/techdocs/blog"/>
     <subtitle>Sci &amp; Tech docs Blog</subtitle>
     <icon>https://maybelambda.cf/techdocs/img/library1.png</icon>
+    <entry>
+        <title type="html"><![CDATA[How to easily dual box Diablo 2 Resurrected on Linux]]></title>
+        <id>https://maybelambda.cf/techdocs/blog/2026/02/15/diablo-2-dual-boxing</id>
+        <link href="https://maybelambda.cf/techdocs/blog/2026/02/15/diablo-2-dual-boxing"/>
+        <updated>2026-02-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dual-boxing in Diablo 2 can be useful for a variety of reasons, such as rushing new characters and]]></summary>
+        <content type="html"><![CDATA[<p>Dual-boxing in Diablo 2 can be useful for a variety of reasons, such as rushing new characters and
+being able to create more of them than with a single account.</p>
+<p>On Linux this is very easy to do with Steam and Proton, without the need to install
+any third-party apps or change settings in the launcher or the game.</p>
+<p><strong>Step by step guide</strong></p>
+<p><strong>Note:</strong> Two different Battle.net accounts with Diablo 2 Resurrected are required.</p>
+<ol>
+<li class="">
+<p>Download the Battle.net <a href="https://download.battle.net/" target="_blank" rel="noopener noreferrer" class="">installer</a>.</p>
+</li>
+<li class="">
+<p>On <em>Steam</em> in the <em>Library</em> section go to <em>Add a Game</em> <code>-&gt;</code> <em>Add a Non-Steam game</em> <code>-&gt;</code> <em>Browse</em> <code>-&gt;</code> select the file <em>Battle.net-Setup.exe</em> <code>-&gt;</code> <em>Add Selected Programs</em></p>
+</li>
+<li class="">
+<p>Right-click on the newly created entry <code>-&gt;</code> <em>Properties</em> <code>-&gt;</code> we can name this however we want, such as <em>Battle.net 1</em>.
+In the <em>Compatibility</em> tab check <em>Force the use of a specific Steam Play compatibility tool</em> and choose <em>Proton 10.xx</em> in the dropdown below.
+<img decoding="async" loading="lazy" alt="Compatibility tab" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g0-fde4acbe53c73ccdfc77a0455a209fc0.png" width="614" height="132" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Right-click on the entry again <code>-&gt;</code> <em>Play</em>. This will launch the Battle.net installer.
+We can accept all the default options and when it's finished the Battle.net launcher will be installed in a Wine / Proton prefix automatically created for this program.</p>
+</li>
+<li class="">
+<p>Go to <em>Properties</em> again and edit the <em>Target</em> and <em>Start in</em> fields, so that they point to the installed app's executable instead of the setup file.
+We can easily find the installation path of the Battle.net app by running this command in a terminal from the <code>home</code> directory:</p>
+<p><code>find . -name 'Battle.net Launcher.exe' -exec readlink -f {} \;</code></p>
+<p><img decoding="async" loading="lazy" alt="Find command results" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g1-e8bf5da61fb67b294cb443382d349eb0.png" width="1243" height="60" class="img_ev3q">
+Copy the path found, paste it into the <em>Target</em> field, and enclose it in double quotes.</p>
+<p>In the <em>Start in</em> field enter the path as well but remove the <code>/Battle.net Launcher.exe</code> part and add quotes to it too.
+<img decoding="async" loading="lazy" alt="Properties" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g2-8abab067322ac3539e94ee3317e80977.png" width="900" height="150" class="img_ev3q"></p>
+</li>
+<li class="">
+<p>Now when we click <em>Play</em> the Battle.net app will open and we can log in with our account and install / run Diablo 2 Resurrected.</p>
+</li>
+</ol>
+<p>Since Wine / Proton automatically isolate file systems and processes from each prefix, we can repeat the same steps a second time, creating another entry called <em>Battle.net 2</em> and installing the Battle.net app and the game again, which will go into a different and independent prefix.</p>
+<p>In the end we can run both entries simultaneously and log in with a different Battle.net account on each one, enabling dual-boxing without having had to tweak any settings in the game or the launcher or use third-party apps.</p>
+<p>Here's a demo video of the finished setup:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BIarE9MHoGY?si=J4hJCAZH9kq-yjFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>]]></content>
+        <author>
+            <name>Asta86</name>
+            <uri>https://maybelambda.cf</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fedora 42 released]]></title>
         <id>https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released</id>
