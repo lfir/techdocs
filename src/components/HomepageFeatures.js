@@ -12,7 +12,7 @@ const FeatureList = [
   {
     title: "Blog",
     path: require("../../static/img/undrawPosts1.png").default,
-    description: <>Update history and more in depth guides.</>,
+    description: <>Update history and more in-depth guides.</>,
     dest: "/techdocs/blog/",
   },
 ];
