@@ -14,13 +14,26 @@ _-1_ tells ffmpeg to decide for us, based on the file's original ratio.
 ## Concatenate video files
 
 ```
+ffmpeg -i "concat:v0.mkv|v1.mkv|v2.mkv" -c copy output.mkv
+```
+
+Alternatively, if freezed frames appear for a couple of seconds in transition points,
+specifying the duration of each file (in seconds) can help.
+
+```
 echo file vid_0.mkv > list.txt
+echo duration 235 >> list.txt
 echo file vid_1.mkv >> list.txt
+echo duration 17 >> list.txt
 ```
 
 ```
 ffmpeg -f concat -i list.txt -c copy output.mkv
 ```
+
+:::note
+Entering the durations in the input file is optional and can also be used to shorten a video in the output.
+:::
 
 ## Convert one audio/video format to another
 
