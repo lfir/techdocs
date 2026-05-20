@@ -2,6 +2,22 @@
 title: Bash
 ---
 
+## Debug mode
+
+Works by printing each command and its arguments to standard error output immediately before execution,
+showing how variables are expanded and commands are evaluated.
+
+Insert `set -x` within the script to start tracing, and `set +x` to stop it (debugging only specific sections).
+
+Or use `set -o xtrace`, with a check on `$TRACE` env variable
+by adding the snippet below and running script as `TRACE=1 ./script.sh`.
+
+```bash
+if [["${TRACE-0}" == "1"]]; then
+    set -o xtrace
+fi
+```
+
 ## File type codes in the output of ls
 
 - `-`: Regular file
@@ -144,6 +160,23 @@ Add line to `~/.bash_profile` or `~/.bashrc`.
 
 :::note
 These statements are executed after user log in.
+:::
+
+### For a single command
+
+Prefix the command with `KEY=value` (e.g., `VAR=test myCommand`).
+This sets the variable only for that specific execution and does not persist in the shell.
+
+Or use the `env` command: `env VAR=value command`.
+
+:::note
+
+- Commands invoked with `env` are not affected by shell aliases.
+- `export` (e.g., `export VAR=test`) makes the variable available to any child shells or scripts spawned by the current shell.
+  :::
+
+:::tip
+The `env` command with the `-i` flag starts a process with an empty environment.
 :::
 
 ## Show pipe operation status with pv

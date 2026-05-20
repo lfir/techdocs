@@ -186,7 +186,7 @@ sudo dnf system-upgrade download --refresh --releasever=xy
 Trigger the upgrade process.
 
 ```
-sudo dnf system-upgrade reboot
+sudo dnf5 offline reboot
 ```
 
 ## Remote control with VNC over SSH
