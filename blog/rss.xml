@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Sci &amp; Tech docs Blog</title>
-        <link>https://maybelambda.cf/techdocs/blog</link>
+        <link>https://leasys.baselinux.net/techdocs/blog</link>
         <description>Sci &amp; Tech docs Blog</description>
         <lastBuildDate>Sun, 15 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[How to easily dual box Diablo 2 Resurrected on Linux]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2026/02/15/diablo-2-dual-boxing</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2026/02/15/diablo-2-dual-boxing</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2026/02/15/diablo-2-dual-boxing</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2026/02/15/diablo-2-dual-boxing</guid>
             <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Dual-boxing in Diablo 2 can be useful for a variety of reasons, such as rushing new characters and]]></description>
             <content:encoded><![CDATA[<p>Dual-boxing in Diablo 2 can be useful for a variety of reasons, such as rushing new characters and
@@ -30,7 +30,7 @@ any third-party apps or change settings in the launcher or the game.</p>
 <li class="">
 <p>Right-click on the newly created entry <code>-&gt;</code> <em>Properties</em> <code>-&gt;</code> we can name this however we want, such as <em>Battle.net 1</em>.
 In the <em>Compatibility</em> tab check <em>Force the use of a specific Steam Play compatibility tool</em> and choose <em>Proton 10.xx</em> in the dropdown below.
-<img decoding="async" loading="lazy" alt="Compatibility tab" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g0-fde4acbe53c73ccdfc77a0455a209fc0.png" width="614" height="132" class="img_ev3q"></p>
+<img decoding="async" loading="lazy" alt="Compatibility tab" src="https://leasys.baselinux.net/techdocs/assets/images/d2r-db-g0-fde4acbe53c73ccdfc77a0455a209fc0.png" width="614" height="132" class="img_ev3q"></p>
 </li>
 <li class="">
 <p>Right-click on the entry again <code>-&gt;</code> <em>Play</em>. This will launch the Battle.net installer.
@@ -40,10 +40,10 @@ We can accept all the default options and when it's finished the Battle.net laun
 <p>Go to <em>Properties</em> again and edit the <em>Target</em> and <em>Start in</em> fields, so that they point to the installed app's executable instead of the setup file.
 We can easily find the installation path of the Battle.net app by running this command in a terminal from the <code>home</code> directory:</p>
 <p><code>find . -name 'Battle.net Launcher.exe' -exec readlink -f {} \;</code></p>
-<p><img decoding="async" loading="lazy" alt="Find command results" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g1-e8bf5da61fb67b294cb443382d349eb0.png" width="1243" height="60" class="img_ev3q">
+<p><img decoding="async" loading="lazy" alt="Find command results" src="https://leasys.baselinux.net/techdocs/assets/images/d2r-db-g1-e8bf5da61fb67b294cb443382d349eb0.png" width="1243" height="60" class="img_ev3q">
 Copy the path found, paste it into the <em>Target</em> field, and enclose it in double quotes.</p>
 <p>In the <em>Start in</em> field enter the path as well but remove the <code>/Battle.net Launcher.exe</code> part and add quotes to it too.
-<img decoding="async" loading="lazy" alt="Properties" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g2-8abab067322ac3539e94ee3317e80977.png" width="900" height="150" class="img_ev3q"></p>
+<img decoding="async" loading="lazy" alt="Properties" src="https://leasys.baselinux.net/techdocs/assets/images/d2r-db-g2-8abab067322ac3539e94ee3317e80977.png" width="900" height="150" class="img_ev3q"></p>
 </li>
 <li class="">
 <p>Now when we click <em>Play</em> the Battle.net app will open and we can log in with our account and install / run Diablo 2 Resurrected.</p>
@@ -56,8 +56,8 @@ Copy the path found, paste it into the <em>Target</em> field, and enclose it in 
         </item>
         <item>
             <title><![CDATA[Fedora 42 released]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2025/04/18/fedora-42-released</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2025/04/18/fedora-42-released</guid>
             <pubDate>Fri, 18 Apr 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Fedora 42 was released last Tuesday and]]></description>
             <content:encoded><![CDATA[<p><a href="https://fedoramagazine.org/announcing-fedora-linux-42" target="_blank" rel="noopener noreferrer" class="">Fedora 42</a> was released last Tuesday and
@@ -79,8 +79,8 @@ and personal files.</li>
         </item>
         <item>
             <title><![CDATA[Docusaurus v3]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2024/03/05/docusaurusv3-update</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2024/03/05/docusaurusv3-update</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2024/03/05/docusaurusv3-update</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2024/03/05/docusaurusv3-update</guid>
             <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Docusaurus was updated to the new major version 3.]]></description>
             <content:encoded><![CDATA[<p>Docusaurus was updated to the new major <a href="https://docusaurus.io/blog/releases/3.0" target="_blank" rel="noopener noreferrer" class="">version 3</a>.</p>
@@ -88,8 +88,8 @@ and personal files.</li>
         </item>
         <item>
             <title><![CDATA[New repo URL]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2024/02/16/renamed-repo</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2024/02/16/renamed-repo</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2024/02/16/renamed-repo</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2024/02/16/renamed-repo</guid>
             <pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[I renamed my GitLab username to something shorter and was happy to see that the pages domain names were updated automatically in just a moment.]]></description>
             <content:encoded><![CDATA[<p>I renamed my GitLab username to something shorter and was happy to see that the pages domain names were updated automatically in just a moment.</p>
@@ -98,8 +98,8 @@ and personal files.</li>
         </item>
         <item>
             <title><![CDATA[Using Q4Wine with wine-ge-custom and Proton]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2023/11/07/q4wine-eggroll</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2023/11/07/q4wine-eggroll</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2023/11/07/q4wine-eggroll</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2023/11/07/q4wine-eggroll</guid>
             <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Lately Q4Wine has been my favorite Wine GUI since it's very]]></description>
             <content:encoded><![CDATA[<p>Lately <a href="https://github.com/brezerk/q4wine" target="_blank" rel="noopener noreferrer" class="">Q4Wine</a> has been my favorite Wine GUI since it's very
@@ -114,8 +114,8 @@ and after that is done in the Prefixes tab it can start being assigned to them.<
         </item>
         <item>
             <title><![CDATA[Docusaurus 2 leaves beta]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2022/08/22/docusaurusv2-prod-release</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2022/08/22/docusaurusv2-prod-release</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2022/08/22/docusaurusv2-prod-release</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2022/08/22/docusaurusv2-prod-release</guid>
             <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[On August 1st Docusarus version 2.0 was launched, the first production release after several betas.]]></description>
             <content:encoded><![CDATA[<p>On August 1st Docusarus version 2.0 was launched, the first production release after several betas.
@@ -127,8 +127,8 @@ components, which required some additional small tweaks.</p>
         </item>
         <item>
             <title><![CDATA[Migration complete]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2022/03/20/docusaurusv2-migration-complete</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2022/03/20/docusaurusv2-migration-complete</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2022/03/20/docusaurusv2-migration-complete</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2022/03/20/docusaurusv2-migration-complete</guid>
             <pubDate>Sun, 20 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[All the existing documents are now integrated with Docusaurus v2 and offline usage (including search) is available through the PWA.]]></description>
             <content:encoded><![CDATA[<p>All the existing documents are now integrated with Docusaurus v2 and offline usage (including search) is available through the PWA.</p>
@@ -138,8 +138,8 @@ components, which required some additional small tweaks.</p>
         </item>
         <item>
             <title><![CDATA[Migration to Docusaurus v2 started]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2022/02/26/docusaurusv2</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2022/02/26/docusaurusv2</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2022/02/26/docusaurusv2</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2022/02/26/docusaurusv2</guid>
             <pubDate>Sat, 26 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Started migrating the site to Docusaurus v2, which provides additional features such as offline search and dark mode.]]></description>
             <content:encoded><![CDATA[<p>Started migrating the site to Docusaurus v2, which provides additional features such as offline search and dark mode.</p>
@@ -153,8 +153,8 @@ components, which required some additional small tweaks.</p>
         </item>
         <item>
             <title><![CDATA[New site address]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2020/08/20/domain-change</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2020/08/20/domain-change</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2020/08/20/domain-change</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2020/08/20/domain-change</guid>
             <pubDate>Thu, 20 Aug 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[The domain name of the site was changed to maybelambda.cf. Additionally]]></description>
             <content:encoded><![CDATA[<p>The domain name of the site was changed to <strong>maybelambda.cf</strong>. Additionally
@@ -163,8 +163,8 @@ the pages of the Blog posts.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Docusaurus version update]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2020/03/31/upd-docusaurus-version</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2020/03/31/upd-docusaurus-version</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2020/03/31/upd-docusaurus-version</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2020/03/31/upd-docusaurus-version</guid>
             <pubDate>Tue, 31 Mar 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Updated Docusaurus to version 1.14.4.]]></description>
             <content:encoded><![CDATA[<p>Updated Docusaurus to version <strong>1.14.4</strong>.</p>
@@ -172,8 +172,8 @@ the pages of the Blog posts.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[The Wine Application Database]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2019/12/27/wine-appdb</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2019/12/27/wine-appdb</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2019/12/27/wine-appdb</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2019/12/27/wine-appdb</guid>
             <pubDate>Fri, 27 Dec 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[For Linux users, gaming has historically been a challenge due to the dominance of Windows-exclusive titles.]]></description>
             <content:encoded><![CDATA[<p>For Linux users, gaming has historically been a challenge due to the dominance of Windows-exclusive titles.
@@ -200,8 +200,8 @@ This can be especially useful since official support in my experience is usually
         </item>
         <item>
             <title><![CDATA[Search enabled]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2019/06/19/search-enabled</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2019/06/19/search-enabled</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2019/06/19/search-enabled</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2019/06/19/search-enabled</guid>
             <pubDate>Wed, 19 Jun 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Search service providad by]]></description>
             <content:encoded><![CDATA[<p>Search service providad by
@@ -211,8 +211,8 @@ is now available. Thanks to them for allowing me to install it on my documentati
         </item>
         <item>
             <title><![CDATA[Migrate site to Docusaurus]]></title>
-            <link>https://maybelambda.cf/techdocs/blog/2019/06/13/new-version-docusaurus</link>
-            <guid>https://maybelambda.cf/techdocs/blog/2019/06/13/new-version-docusaurus</guid>
+            <link>https://leasys.baselinux.net/techdocs/blog/2019/06/13/new-version-docusaurus</link>
+            <guid>https://leasys.baselinux.net/techdocs/blog/2019/06/13/new-version-docusaurus</guid>
             <pubDate>Thu, 13 Jun 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[First working version of my personal documentation site built with Docusaurus.]]></description>
             <content:encoded><![CDATA[<p>First working version of my personal documentation site built with Docusaurus.</p>

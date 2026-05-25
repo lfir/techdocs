@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://maybelambda.cf/techdocs/blog</id>
+    <id>https://leasys.baselinux.net/techdocs/blog</id>
     <title>Sci &amp; Tech docs Blog</title>
     <updated>2026-02-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://maybelambda.cf/techdocs/blog"/>
+    <link rel="alternate" href="https://leasys.baselinux.net/techdocs/blog"/>
     <subtitle>Sci &amp; Tech docs Blog</subtitle>
-    <icon>https://maybelambda.cf/techdocs/img/library1.png</icon>
+    <icon>https://leasys.baselinux.net/techdocs/img/library1.png</icon>
     <entry>
         <title type="html"><![CDATA[How to easily dual box Diablo 2 Resurrected on Linux]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2026/02/15/diablo-2-dual-boxing</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2026/02/15/diablo-2-dual-boxing"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2026/02/15/diablo-2-dual-boxing</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2026/02/15/diablo-2-dual-boxing"/>
         <updated>2026-02-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Dual-boxing in Diablo 2 can be useful for a variety of reasons, such as rushing new characters and]]></summary>
         <content type="html"><![CDATA[<p>Dual-boxing in Diablo 2 can be useful for a variety of reasons, such as rushing new characters and
@@ -29,7 +29,7 @@ any third-party apps or change settings in the launcher or the game.</p>
 <li class="">
 <p>Right-click on the newly created entry <code>-&gt;</code> <em>Properties</em> <code>-&gt;</code> we can name this however we want, such as <em>Battle.net 1</em>.
 In the <em>Compatibility</em> tab check <em>Force the use of a specific Steam Play compatibility tool</em> and choose <em>Proton 10.xx</em> in the dropdown below.
-<img decoding="async" loading="lazy" alt="Compatibility tab" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g0-fde4acbe53c73ccdfc77a0455a209fc0.png" width="614" height="132" class="img_ev3q"></p>
+<img decoding="async" loading="lazy" alt="Compatibility tab" src="https://leasys.baselinux.net/techdocs/assets/images/d2r-db-g0-fde4acbe53c73ccdfc77a0455a209fc0.png" width="614" height="132" class="img_ev3q"></p>
 </li>
 <li class="">
 <p>Right-click on the entry again <code>-&gt;</code> <em>Play</em>. This will launch the Battle.net installer.
@@ -39,10 +39,10 @@ We can accept all the default options and when it's finished the Battle.net laun
 <p>Go to <em>Properties</em> again and edit the <em>Target</em> and <em>Start in</em> fields, so that they point to the installed app's executable instead of the setup file.
 We can easily find the installation path of the Battle.net app by running this command in a terminal from the <code>home</code> directory:</p>
 <p><code>find . -name 'Battle.net Launcher.exe' -exec readlink -f {} \;</code></p>
-<p><img decoding="async" loading="lazy" alt="Find command results" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g1-e8bf5da61fb67b294cb443382d349eb0.png" width="1243" height="60" class="img_ev3q">
+<p><img decoding="async" loading="lazy" alt="Find command results" src="https://leasys.baselinux.net/techdocs/assets/images/d2r-db-g1-e8bf5da61fb67b294cb443382d349eb0.png" width="1243" height="60" class="img_ev3q">
 Copy the path found, paste it into the <em>Target</em> field, and enclose it in double quotes.</p>
 <p>In the <em>Start in</em> field enter the path as well but remove the <code>/Battle.net Launcher.exe</code> part and add quotes to it too.
-<img decoding="async" loading="lazy" alt="Properties" src="https://maybelambda.cf/techdocs/assets/images/d2r-db-g2-8abab067322ac3539e94ee3317e80977.png" width="900" height="150" class="img_ev3q"></p>
+<img decoding="async" loading="lazy" alt="Properties" src="https://leasys.baselinux.net/techdocs/assets/images/d2r-db-g2-8abab067322ac3539e94ee3317e80977.png" width="900" height="150" class="img_ev3q"></p>
 </li>
 <li class="">
 <p>Now when we click <em>Play</em> the Battle.net app will open and we can log in with our account and install / run Diablo 2 Resurrected.</p>
@@ -54,13 +54,13 @@ Copy the path found, paste it into the <em>Target</em> field, and enclose it in 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BIarE9MHoGY?si=J4hJCAZH9kq-yjFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Fedora 42 released]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2025/04/18/fedora-42-released"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2025/04/18/fedora-42-released</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2025/04/18/fedora-42-released"/>
         <updated>2025-04-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Fedora 42 was released last Tuesday and]]></summary>
         <content type="html"><![CDATA[<p><a href="https://fedoramagazine.org/announcing-fedora-linux-42" target="_blank" rel="noopener noreferrer" class="">Fedora 42</a> was released last Tuesday and
@@ -81,26 +81,26 @@ and personal files.</li>
 <p>Congratulations to Red Hat and the Fedora team and community!</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Docusaurus v3]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2024/03/05/docusaurusv3-update</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2024/03/05/docusaurusv3-update"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2024/03/05/docusaurusv3-update</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2024/03/05/docusaurusv3-update"/>
         <updated>2024-03-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Docusaurus was updated to the new major version 3.]]></summary>
         <content type="html"><![CDATA[<p>Docusaurus was updated to the new major <a href="https://docusaurus.io/blog/releases/3.0" target="_blank" rel="noopener noreferrer" class="">version 3</a>.</p>
 <p>This time luckily only minor document formatting changes were needed to make them fully compatible with the new version of MDX that it uses.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[New repo URL]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2024/02/16/renamed-repo</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2024/02/16/renamed-repo"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2024/02/16/renamed-repo</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2024/02/16/renamed-repo"/>
         <updated>2024-02-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I renamed my GitLab username to something shorter and was happy to see that the pages domain names were updated automatically in just a moment.]]></summary>
         <content type="html"><![CDATA[<p>I renamed my GitLab username to something shorter and was happy to see that the pages domain names were updated automatically in just a moment.</p>
@@ -108,13 +108,13 @@ and personal files.</li>
 <p>Finally, I didn't face any issues with the deploy pipelines in the new namespace.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Using Q4Wine with wine-ge-custom and Proton]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2023/11/07/q4wine-eggroll</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2023/11/07/q4wine-eggroll"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2023/11/07/q4wine-eggroll</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2023/11/07/q4wine-eggroll"/>
         <updated>2023-11-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Lately Q4Wine has been my favorite Wine GUI since it's very]]></summary>
         <content type="html"><![CDATA[<p>Lately <a href="https://github.com/brezerk/q4wine" target="_blank" rel="noopener noreferrer" class="">Q4Wine</a> has been my favorite Wine GUI since it's very
@@ -128,13 +128,13 @@ Tools -&gt; Wine Version Manager
 and after that is done in the Prefixes tab it can start being assigned to them.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Docusaurus 2 leaves beta]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2022/08/22/docusaurusv2-prod-release</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2022/08/22/docusaurusv2-prod-release"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2022/08/22/docusaurusv2-prod-release</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2022/08/22/docusaurusv2-prod-release"/>
         <updated>2022-08-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[On August 1st Docusarus version 2.0 was launched, the first production release after several betas.]]></summary>
         <content type="html"><![CDATA[<p>On August 1st Docusarus version 2.0 was launched, the first production release after several betas.
@@ -145,13 +145,13 @@ components, which required some additional small tweaks.</p>
 <p><a href="https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0" target="_blank" rel="noopener noreferrer" class="">Official announcement</a>.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Migration complete]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2022/03/20/docusaurusv2-migration-complete</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2022/03/20/docusaurusv2-migration-complete"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2022/03/20/docusaurusv2-migration-complete</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2022/03/20/docusaurusv2-migration-complete"/>
         <updated>2022-03-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[All the existing documents are now integrated with Docusaurus v2 and offline usage (including search) is available through the PWA.]]></summary>
         <content type="html"><![CDATA[<p>All the existing documents are now integrated with Docusaurus v2 and offline usage (including search) is available through the PWA.</p>
@@ -160,13 +160,13 @@ components, which required some additional small tweaks.</p>
 <p>Since the main features work well, I will continue using Docusaurus v2 exclusively for this website from now on.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Migration to Docusaurus v2 started]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2022/02/26/docusaurusv2</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2022/02/26/docusaurusv2"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2022/02/26/docusaurusv2</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2022/02/26/docusaurusv2"/>
         <updated>2022-02-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Started migrating the site to Docusaurus v2, which provides additional features such as offline search and dark mode.]]></summary>
         <content type="html"><![CDATA[<p>Started migrating the site to Docusaurus v2, which provides additional features such as offline search and dark mode.</p>
@@ -179,13 +179,13 @@ components, which required some additional small tweaks.</p>
 </ul>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[New site address]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2020/08/20/domain-change</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2020/08/20/domain-change"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2020/08/20/domain-change</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2020/08/20/domain-change"/>
         <updated>2020-08-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The domain name of the site was changed to maybelambda.cf. Additionally]]></summary>
         <content type="html"><![CDATA[<p>The domain name of the site was changed to <strong>maybelambda.cf</strong>. Additionally
@@ -193,26 +193,26 @@ Docusaurus was updated to version <strong>1.14.6</strong> and Disqus comments we
 the pages of the Blog posts.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Docusaurus version update]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2020/03/31/upd-docusaurus-version</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2020/03/31/upd-docusaurus-version"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2020/03/31/upd-docusaurus-version</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2020/03/31/upd-docusaurus-version"/>
         <updated>2020-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Updated Docusaurus to version 1.14.4.]]></summary>
         <content type="html"><![CDATA[<p>Updated Docusaurus to version <strong>1.14.4</strong>.</p>
 <p><a href="https://github.com/facebook/docusaurus/releases/tag/v1.14.4" target="_blank" rel="noopener noreferrer" class="">Release notes</a>.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Wine Application Database]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2019/12/27/wine-appdb</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2019/12/27/wine-appdb"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2019/12/27/wine-appdb</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2019/12/27/wine-appdb"/>
         <updated>2019-12-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[For Linux users, gaming has historically been a challenge due to the dominance of Windows-exclusive titles.]]></summary>
         <content type="html"><![CDATA[<p>For Linux users, gaming has historically been a challenge due to the dominance of Windows-exclusive titles.
@@ -238,13 +238,13 @@ creating a reference for myself when installing a similar application, or the sa
 This can be especially useful since official support in my experience is usually very hard to get for particular problems.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Search enabled]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2019/06/19/search-enabled</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2019/06/19/search-enabled"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2019/06/19/search-enabled</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2019/06/19/search-enabled"/>
         <updated>2019-06-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Search service providad by]]></summary>
         <content type="html"><![CDATA[<p>Search service providad by
@@ -253,13 +253,13 @@ is now available. Thanks to them for allowing me to install it on my documentati
 <p>It can be used while browing the website connected to the internet.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Migrate site to Docusaurus]]></title>
-        <id>https://maybelambda.cf/techdocs/blog/2019/06/13/new-version-docusaurus</id>
-        <link href="https://maybelambda.cf/techdocs/blog/2019/06/13/new-version-docusaurus"/>
+        <id>https://leasys.baselinux.net/techdocs/blog/2019/06/13/new-version-docusaurus</id>
+        <link href="https://leasys.baselinux.net/techdocs/blog/2019/06/13/new-version-docusaurus"/>
         <updated>2019-06-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[First working version of my personal documentation site built with Docusaurus.]]></summary>
         <content type="html"><![CDATA[<p>First working version of my personal documentation site built with Docusaurus.</p>
@@ -268,7 +268,7 @@ is now available. Thanks to them for allowing me to install it on my documentati
 although it is not being updated anymore.</p>]]></content>
         <author>
             <name>Asta86</name>
-            <uri>https://maybelambda.cf</uri>
+            <uri>https://leasys.baselinux.net</uri>
         </author>
     </entry>
 </feed>
