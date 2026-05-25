@@ -14,11 +14,11 @@ export default function BlogPostPaginatorWrapper(props) {
         {() => {
           const currPath = window.location.pathname;
           const disqusConfig = {
-            shortname: "maybelambda-td", // Replace with your Disqus shortname
+            shortname: "maybelambda", // Replace with your Disqus shortname
             config: {
               // With hardcoded baseUrl getting localhost when running locally is avoided.
               // Otherwise threads with wrong links might be created on Disqus.
-              url: "https://maybelambda.cf" + currPath,
+              url: "https://leasys.baselinux.net" + currPath,
               identifier: currPath.substring(currPath.lastIndexOf("/") + 1),
             },
           };
