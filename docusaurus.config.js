@@ -1,13 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const themes = require('prism-react-renderer').themes,
+const themes = require("prism-react-renderer").themes,
   lightCodeTheme = themes.nightOwlLight,
   darkCodeTheme = themes.palenight,
   repoUrl = "https://github.com",
   repoName = "techdocs",
   repoOwner = "lfir",
-  portfolioUrl = "https://maybelambda.cf",
+  portfolioUrl = "https://leasys.baselinux.net",
   portfolio = {
     label: "Portfolio",
     href: portfolioUrl,
