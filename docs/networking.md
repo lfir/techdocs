@@ -16,6 +16,150 @@ The record type can also be specified for non-A records, i.e. `dig _acme-challen
 
 - `-x ipAddr` - Reverse lookup.
 
+## Firewalld
+
+### Persistent vs temporary changes
+
+By default, changes are applied to the runtime configuration only and are lost on reload or reboot. Add `--permanent`
+to write the change to the saved configuration (it is not applied to the running firewall until reloaded).
+
+**Save the current runtime configuration as permanent**
+
+```bash
+sudo firewall-cmd --runtime-to-permanent
+```
+
+### Reload configuration
+
+```bash
+sudo firewall-cmd --reload
+```
+
+:::note
+Reloading applies the permanent configuration and discards runtime-only changes.
+:::
+
+### Zones
+
+#### Show active zones
+
+```bash
+sudo firewall-cmd --get-active-zones
+```
+
+#### Show rules of all zones or a specific zone
+
+```bash
+sudo firewall-cmd --list-all-zones
+```
+
+```bash
+sudo firewall-cmd --zone=public --list-all
+```
+
+#### Add a zone
+
+```bash
+sudo firewall-cmd --permanent --new-zone=myZone
+```
+
+:::note
+A new zone is only available after reloading.
+:::
+
+#### Zone matching order
+
+For each incoming packet, firewalld picks the zone using the first match in this order:
+
+1. **Source** - a zone with a source matching the packet's source address.
+2. **Interface** - the zone the incoming interface is assigned to.
+3. **Default zone** - used when neither of the above matches.
+
+#### Get / set default zone
+
+```bash
+sudo firewall-cmd --get-default-zone
+```
+
+```bash
+sudo firewall-cmd --set-default-zone=public
+```
+
+### Traffic rules
+
+#### Add a port
+
+```bash
+sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+```
+
+:::warning
+If `--zone` is omitted, the change is applied to the default zone. This applies to ports, services, rich rules and other zone-scoped options too.
+:::
+
+#### Add a service
+
+```bash
+sudo firewall-cmd --permanent --zone=public --add-service=https
+```
+
+```bash
+sudo firewall-cmd --get-services # list available services
+```
+
+#### Add a rich rule
+
+Express policies that services and ports alone can't: match by source/destination address, family, service or port, and apply `accept`, `reject`, `drop`.
+They also support rate limiting and timeouts.
+
+```bash
+sudo firewall-cmd --permanent --zone=public --add-rich-rule='rule family="ipv4" source address="192.168.1.0/24" port port="8080" protocol="tcp" accept'
+```
+
+```bash
+sudo firewall-cmd --zone=public --list-rich-rules
+```
+
+:::tip
+Use `--remove-port`, `--remove-service` and `--remove-rich-rule` (with the same arguments) to undo each of these.
+:::
+
+#### Add or remove a source
+
+Assigns traffic coming from an address or network to a zone.
+
+```bash
+sudo firewall-cmd --permanent --zone=trusted --add-source=192.168.1.0/24
+```
+
+```bash
+sudo firewall-cmd --permanent --zone=trusted --remove-source=192.168.1.0/24
+```
+
+```bash
+sudo firewall-cmd --zone=trusted --list-sources
+```
+
+#### Add or remove an interface
+
+Assigns all traffic of an interface to a zone.
+
+```bash
+sudo firewall-cmd --permanent --zone=internal --add-interface=eth1
+```
+
+```bash
+sudo firewall-cmd --permanent --zone=internal --remove-interface=eth1
+```
+
+```bash
+sudo firewall-cmd --zone=internal --change-interface=eth1 # move to another zone
+```
+
+:::note
+A source takes precedence over an interface, so a more specific source can be given different rules than the rest of the traffic on the same interface.
+:::
+
 ## Hostname
 
 ### Set
