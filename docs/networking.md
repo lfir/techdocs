@@ -14,6 +14,7 @@ The record type can also be specified for non-A records, i.e. `dig _acme-challen
 
 ### Useful options
 
+- `@server` - Set DNS server to use for query, i.e. `dig @1.1.1.1 domainName`.
 - `-x ipAddr` - Reverse lookup.
 
 ## Firewalld
