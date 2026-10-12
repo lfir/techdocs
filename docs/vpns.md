@@ -56,6 +56,12 @@ A good practice (balance between speed and privacy) is to choose a server in a c
 
 Examples use an interface named `wg0`, configured in `/etc/wireguard/wg0.conf`.
 
+### Generate a keypair
+
+```bash
+priv=$(wg genkey); pub=$(echo "$priv" | wg pubkey); echo -e "Private Key: $priv\nPublic Key: $pub"
+```
+
 ### Service management (systemd)
 
 ```
